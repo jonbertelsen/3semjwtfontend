@@ -1,0 +1,24 @@
+a.active {
+  background-color: aquamarine;
+}
+
+#container {
+ 
+  width: 800px;
+  padding:20px;
+  border: 1px solid red;
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+}
+
+#subpage {
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+
+
+
