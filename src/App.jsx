@@ -20,7 +20,10 @@ function App() {
     setLoggedIn(false);
   };
   const login = (user, pass) => {
-    facade.login(user, pass).then((res) => setLoggedIn(true));
+    facade.login(user, pass).then(() => {
+      setLoggedIn(true);
+      setIsAdmin(facade.hasUserAccess('admin', true));
+    });
   };
 
   const routes = createBrowserRouter(
